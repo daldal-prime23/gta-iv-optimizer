@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101014">
+  <title>GTA IV Optimizer | Liberty City</title>
+ 
+/* Botones de las guías */
+.guide-button {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 11px 18px;
+  background: #ff3030;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 7px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.guide-button:hover {
+  background: #d91f1f;
+  transform: translateY(-2px);
+}
+
+/* Desplazamiento suave al abrir una sección */
+html {
+  scroll-behavior: smooth;
+}
+
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #101014;
+      color: #f5f5f7;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 7%;
+      border-bottom: 1px solid #292930;
+      background: #101014;
+    }
+
+    .logo { font-weight: 900; letter-spacing: 1px; }
+    .logo span { color: #ff414b; }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 14px;
+    }
+
+    nav a:hover { color: #ff414b; }
+
+    .hero {
+      min-height: 440px;
+      padding: 95px 7%;
+      background:
+        linear-gradient(90deg, #101014 10%, #101014dd 55%, #10101466),
+        radial-gradient(ellipse at 80% 30%, #77202b, #24202b 50%, #101014 80%);
+    }
+
+    .eyebrow {
+      color: #ff515b;
+      font-weight: bold;
+      font-size: 12px;
+      letter-spacing: 3px;
+    }
+
+    h1 {
+      max-width: 780px;
+      font-size: clamp(40px, 7vw, 76px);
+      line-height: 1.02;
+      margin: 20px 0;
+    }
+
+    h1 span { color: #ff414b; }
+
+    .hero p {
+      color: #c3c3ca;
+      line-height: 1.8;
+      max-width: 580px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #ff414b;
+      color: white;
+      padding: 14px 22px;
+      border-radius: 5px;
+      margin-top: 18px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover { background: #db303b; }
+
+    section { padding: 65px 7%; }
+    h2 { font-size: 30px; }
+    .muted { color: #a7a7b1; line-height: 1.8; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .card {
+      padding: 24px;
+      background: #19191f;
+      border: 1px solid #303039;
+      border-radius: 9px;
+    }
+
+    .number {
+      color: #ff515b;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .card p { color: #aaaab4; line-height: 1.7; }
+
+    .notice {
+      margin-top: 25px;
+      padding: 18px;
+      border-left: 3px solid #ff414b;
+      background: #1b191e;
+      color: #c9c9d0;
+      line-height: 1.7;
+    }
+
+    footer {
+      padding: 25px 7%;
+      border-top: 1px solid #292930;
+      color: #85858f;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 18px 5%; flex-wrap: wrap; gap: 15px; }
+      nav a { margin-left: 0; margin-right: 12px; }
+      .hero { padding: 70px 5%; }
+      section { padding: 45px 5%; }
+    }
+ 
+/* Efecto moderno para las tarjetas */
+.card {
+  transition: transform 0.25s ease, border-color 0.25s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #ff3030;
+}
+
+/* Mejor aspecto para las etiquetas */
+.tag {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 10px;
+  border: 1px solid rgba(255, 48, 48, 0.35);
+  border-radius: 6px;
+  color: #ff5555;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+ 
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">GTA IV <span>OPTIMIZER</span></div>
+   
+<nav>
+  <a href="#optimizacion">Optimización</a>
+  <a href="#descargas">Descargas</a>
+  <a href="#pc-bajos-recursos">PC de bajos recursos</a>
+  <a href="#proyecto">Proyecto</a>
+</nav>
+
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">INDEPENDENT PERFORMANCE PROJECT</div>
+      <h1>WELCOME TO<br><span>LIBERTY CITY.</span></h1>
+      <p>
+        Un proyecto dedicado a mejorar la experiencia de GTA IV
+        en ordenadores modestos mediante configuraciones estudiadas,
+        pruebas reales y guías fáciles de seguir.
+      </p>
+      <a class="button" href="#optimizacion">EXPLORAR EL PROYECTO ↗</a>
+    </section>
+
+    <section id="optimizacion">
+      <div class="eyebrow">NUESTRO OBJETIVO</div>
+      <h2>GTA IV, mejor optimizado.</h2>
+      <p class="muted">
+        Buscamos un rendimiento más estable sin prometer resultados
+        que todavía no hayamos medido.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <div class="number">01 / GRAPHICS</div>
+          <h3>Ajustes gráficos</h3>
+          <p>Estudiaremos qué opciones conviene reducir para aliviar la carga del ordenador.</p>
+        </article>
+
+        <article class="card">
+          <div class="number">02 / PERFORMANCE</div>
+          <h3>Más estabilidad</h3>
+          <p>Analizaremos los FPS, los tirones y los tiempos de fotograma durante las pruebas.</p>
+        </article>
+
+        <article class="card">
+          <div class="number">03 / COMPATIBILITY</div>
+          <h3>PC modestos</h3>
+          <p>Documentaremos los resultados según el hardware y la configuración utilizada.</p>
+        </article>
+      </div>
+
+      <div class="notice">
+        <strong>ESTADO:</strong> proyecto en desarrollo.
+        Las configuraciones y sus resultados se añadirán después de probarlas.
+      </div>
+    </section>
+
+    <section id="descargas">
+      <div class="eyebrow">TOOLS & DOWNLOADS</div>
+      <h2>Centro de optimización</h2>
+      <p class="muted">
+        Aquí reuniremos las herramientas, configuraciones y guías
+        que hayamos comprobado para mejorar el rendimiento de GTA IV.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <div class="number">TOOL 01</div>
+          <h3>Configuración gráfica</h3>
+          <p>Guía para ajustar los gráficos según las características de tu PC.</p>
+          <span class="muted">Próximamente</span>
+        </article>
+
+        <article class="card">
+          <div class="number">TOOL 02</div>
+          <h3>Guía de rendimiento</h3>
+          <p>Pasos para medir los FPS y comprobar qué ajustes ayudan realmente.</p>
+          <span class="muted">Próximamente</span>
+        </article>
+
+        <article class="card">
+          <div class="number">TOOL 03</div>
+          <h3>Compatibilidad</h3>
+          <p>Información sobre requisitos, versiones y configuraciones compatibles.</p>
+          <span class="muted">Próximamente</span>
+        </article>
+      </div>
+    </section>
+
+<section id="pc-bajos-recursos">
+  <p class="eyebrow">RENDIMIENTO EXTREMO</p>
+  <h2>Optimización para PC de bajos recursos.</h2>
+  <p class="muted">
+    Estamos preparando ajustes para mejorar la experiencia
+    de GTA IV en ordenadores antiguos.
+  </p>
+
+  <div class="cards">
+    <article class="card">
+      <span class="number">01</span>
+     
+<h3>Gráficos optimizados</h3>
+<p>
+  Reduce la resolución, las sombras y la distancia de visión
+  para intentar mejorar los FPS en equipos modestos.
+</p>
+<span class="tag">GUÍA INICIAL</span>
+
+<a class="guide-button" href="#guia-graficos">Ver guía →</a>
+
+    </article>
+
+    <article class="card">
+      <span class="number">02</span>
+      <h3>Más estabilidad</h3>
+      <p>Consejos para reducir tirones y mejorar la fluidez.</p>
+      <span class="tag">EN DESARROLLO</span>
+    </article>
+
+    <article class="card">
+      <span class="number">03</span>
+      <h3>PC antiguos</h3>
+      <p>Guías adaptadas a ordenadores modestos como el nuestro.</p>
+      <span class="tag">EN DESARROLLO</span>
+    </article>
+  </div>
+</section>
+
+<section id="guia-graficos">
+  <p class="eyebrow">GUÍA 01</p>
+  <h2>Configuración gráfica inicial</h2>
+  <p class="muted">
+    Ajustes que podremos probar cuando tengamos GTA IV instalado.
+  </p>
+
+  <div class="card">
+    <h3>Primeros ajustes</h3>
+    <ul>
+      <li>Empieza con una resolución baja, como 800 × 600.</li>
+      <li>Prueba las sombras en bajo o desactivadas si el juego lo permite.</li>
+      <li>Reduce la distancia de visión y la densidad de vehículos.</li>
+      <li>Cierra los programas innecesarios antes de jugar.</li>
+    </ul>
+    <p class="muted">
+      Los resultados dependen del equipo y de la versión del juego.
+      Estos ajustes aún no están probados en nuestro PC.
+    </p>
+  </div>
+</section>
+
+    <section id="proyecto">
+      <div class="eyebrow">ABOUT THE PROJECT</div>
+      <h2>Construido paso a paso.</h2>
+      <p class="muted">
+        GTA IV Optimizer es un proyecto independiente, no afiliado
+        a Rockstar Games. Grand Theft Auto IV y sus marcas pertenecen
+        a sus respectivos propietarios. No distribuimos el juego original.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    GTA IV Optimizer © 2026 · Proyecto independiente
+  </footer>
+</body>
+</html>
